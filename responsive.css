@@ -3,23 +3,28 @@
 
   .wrapper,.header-wrapper{
     width:100%;
+    height:auto;
   }
   .header{
     height:auto;
+    flex-direction: column;
   }
   .header-left{
-    position:static;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .logo{
+    margin:0 auto;
   }
   .header-right{
-    position:static;
-    text-align: center;
-    position: static;
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    
+  }
+  .header-right h1{
+    margin:0;
+  }
+  .header-right h2{
+    margin:10px 0; 
   }
   .navi {
     position: static;
@@ -29,8 +34,9 @@
     border: none;
     margin: 12px 0;
     height: auto;
+    /* background-color:pink; */
+  display:none;
 }
-
 
 
 #contentsWrapper, #footer {
@@ -38,11 +44,24 @@
 }
 #main {
   margin-bottom: 3em;
+  padding: 0;
 }
 #main, #menu {
   float: none;
   width: 100%;
-  padding: 0 12px;
+  padding: 0 ;
+}
+.mainImage{
+  display:flex;
+  width:100%;
+}
+.image1{
+  width:95%;
+  margin:0 auto;
+}
+.main-contents{
+  /* display: flex; */
+  flex-direction: column-reverse;
 }
 
 
@@ -74,4 +93,4 @@
 @media(min-width:376px)and(max-width:768px){
   /* 375px = iPhone6 7 8*/
  
- 
+}
